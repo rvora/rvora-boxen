@@ -76,11 +76,11 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: rvora/puppet-boxen
   specs:
-    boxen (3.0.1)
+    boxen (3.0.2.a)
 
 DEPENDENCIES
   autoconf (= 1.0.0)
-  boxen (= 3.0.1)
+  boxen (= 3.0.2.a)
   dnsmasq (= 1.0.0)
   gcc (= 2.0.1)
   git (= 1.2.5)
