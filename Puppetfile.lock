@@ -4,11 +4,6 @@ GITHUBTARBALL
     autoconf (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-boxen
-  specs:
-    boxen (3.0.1)
-
-GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.0)
@@ -77,6 +72,11 @@ GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
     stdlib (4.1.0)
+
+GITHUBTARBALL
+  remote: rvora/puppet-boxen
+  specs:
+    boxen (3.0.1)
 
 DEPENDENCIES
   autoconf (= 1.0.0)
