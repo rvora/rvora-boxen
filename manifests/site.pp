@@ -88,4 +88,16 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
+
+  include java
+  include iterm2::stable
+
+  include vagrant
+  vagrant::plugin { 'vagrant-aws': }
+  vagrant::box {'precise64/virtualbox':
+    source => 'http://files.vagrantup.com/precise64.box'
+  }
+
+  include virtualbox
+  include sourcetree
 }

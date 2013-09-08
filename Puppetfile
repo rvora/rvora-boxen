@@ -36,3 +36,9 @@ github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "java",       "1.1.0"
+github "iterm2",     "1.0.3"
+github "vagrant",    "2.0.10"
+github "virtualbox", "1.0.5"
+github "sourcetree", "0.0.4"
