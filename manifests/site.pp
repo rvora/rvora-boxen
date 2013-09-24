@@ -82,7 +82,7 @@ node default {
       'findutils',
       'gnu-tar',
       'markdown',
-      'aspell'
+      'aspell',
     ]:
   }
 
@@ -91,11 +91,12 @@ node default {
     target => $boxen::config::repodir
   }
 
-  include java
+#  include java
   include iterm2::stable
 
   include vagrant
   vagrant::plugin { 'vagrant-aws': }
+  vagrant::plugin { 'vagrant-salt': }
   vagrant::box {'precise64/virtualbox':
     source => 'http://files.vagrantup.com/precise64.box'
   }
