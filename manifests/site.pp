@@ -97,10 +97,15 @@ node default {
   include vagrant
   vagrant::plugin { 'vagrant-aws': }
   vagrant::plugin { 'vagrant-salt': }
+#  vagrant::plugin { 'vagrant-ansible': }
   vagrant::box {'precise64/virtualbox':
     source => 'http://files.vagrantup.com/precise64.box'
   }
 
   include virtualbox
   include sourcetree
+
+  include python
+  python::pip { 'jinja2':
+  }
 }
