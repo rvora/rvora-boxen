@@ -105,7 +105,7 @@ node default {
   include virtualbox
   include sourcetree
 
-  include python
-  python::pip { 'jinja2':
-  }
+# does not work without virtual env. 
+#  include python
+#  python::pip { 'jinja2': }
 }
